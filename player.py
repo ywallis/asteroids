@@ -5,6 +5,8 @@ import pygame
 
 class Player(CircleShape):
 
+    containers: tuple[pygame.sprite.Group, pygame.sprite.Group]
+
     def __init__(self, x: float, y: float):
         super().__init__(x, y, PLAYER_RADIUS)
         self.rotation: int = 0
