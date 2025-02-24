@@ -2,7 +2,6 @@ import pygame
 
 # Base class for game objects
 class CircleShape(pygame.sprite.Sprite):
-    containers: pygame.sprite.Group
     def __init__(self, x, y, radius):
         # we will be using this later
         if hasattr(self, "containers"):
